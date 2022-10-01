@@ -15,7 +15,7 @@
     border-style: none;
     border-radius: 4px;
     font-family: inherit;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 
     &:hover,
     &:focus {

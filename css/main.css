@@ -11,6 +11,7 @@
   --borderline: #ECECEC;
   --imgborderline: #EEEEEE;
   --sociallinkcolor: #AFB1B8;
+  --animation: 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -106,7 +107,7 @@ img {
   color: var(--white);
 }
 
-footer .logo {
+.footer .logo {
   display: block;
   margin-bottom: 20px;
 }
@@ -166,7 +167,7 @@ footer .logo {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation);
 }
 .modal-window__close-button:hover, .modal-window__close-button:focus {
   fill: var(--blue);
@@ -202,7 +203,7 @@ footer .logo {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--animation);
 }
 .modal-form__field:focus {
   outline: none;
@@ -220,7 +221,7 @@ footer .logo {
   width: 18px;
   height: 18px;
   margin-left: 12px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation);
 }
 
 .modal-form__textarea-label {
@@ -239,7 +240,7 @@ footer .logo {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline var(--animation), border-color var(--animation);
 }
 .modal-form__message:focus {
   outline: none;
@@ -318,7 +319,7 @@ footer .logo {
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation), box-shadow var(--animation);
 }
 .modal-form__submit-button:hover, .modal-form__submit-button:focus {
   background-color: var(--hoverblue);
@@ -342,7 +343,7 @@ footer .logo {
   border-style: none;
   border-radius: 4px;
   font-family: inherit;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 .filters__button:hover, .filters__button:focus {
   background-color: var(--blue);
@@ -389,7 +390,7 @@ footer .logo {
 
 .navigation__link {
   color: var(--dark);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -410,7 +411,7 @@ footer .logo {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--charcoal);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -424,7 +425,7 @@ footer .logo {
 .contacts__icon {
   fill: var(--charcoal);
   margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation);
 }
 
 .current {
@@ -482,7 +483,7 @@ footer .logo {
   border-radius: 4px;
   width: 216px;
   height: 50px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation), box-shadow var(--animation);
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--hoverblue);
@@ -608,7 +609,7 @@ footer .logo {
   border-radius: 50%;
   background-color: var(--white);
   fill: var(--sociallinkcolor);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation), fill var(--animation);
 }
 .social__link:hover, .social__link:focus {
   background-color: var(--blue);
@@ -631,7 +632,7 @@ footer .logo {
   border: 1px solid var(--sociallinkcolor);
   border-radius: 4px;
   fill: var(--sociallinkcolor);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation), border var(--animation);
 }
 .clients__link:hover, .clients__link:focus {
   border: 1px solid var(--blue);
@@ -664,6 +665,10 @@ footer .logo {
   font-size: 14px;
   line-height: 24px;
   color: var(--white);
+  transition: color var(--animation);
+}
+.contact-info__address:hover, .contact-info__address:focus {
+  color: var(--blue);
 }
 
 .contact-info__contacts {
@@ -671,7 +676,7 @@ footer .logo {
   font-size: 14px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--animation);
 }
 .contact-info__contacts:hover, .contact-info__contacts:focus {
   color: var(--blue);
@@ -703,7 +708,7 @@ footer .logo {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation);
 }
 .footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--blue);
@@ -741,7 +746,7 @@ footer .logo {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--animation), box-shadow var(--animation);
 }
 .footer-subscribe__button:hover, .footer-subscribe__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -761,7 +766,7 @@ footer .logo {
 
 .products__item {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--animation);
 }
 .products__item:hover, .products__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -789,7 +794,7 @@ footer .logo {
   padding: 63px 24px;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation);
 }
 
 .products__description {
